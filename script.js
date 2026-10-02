@@ -45,12 +45,12 @@
   var particlesContainer = document.getElementById('hero-particles');
 
   if (particlesContainer) {
-    for (var i = 0; i < 30; i++) {
+    for (var i = 0; i < 40; i++) {
       var particle = document.createElement('div');
       particle.classList.add('hero-particle');
       particle.style.left = Math.random() * 100 + '%';
-      particle.style.animationDuration = (Math.random() * 10 + 8) + 's';
-      particle.style.animationDelay = (Math.random() * 10) + 's';
+      particle.style.animationDuration = (Math.random() * 12 + 8) + 's';
+      particle.style.animationDelay = (Math.random() * 12) + 's';
       var size = (Math.random() * 4 + 2) + 'px';
       particle.style.width = size;
       particle.style.height = size;
@@ -88,7 +88,7 @@
   function createObserver() {
     if (!('IntersectionObserver' in window)) {
       // Fallback: show everything immediately
-      var elements = document.querySelectorAll('.step-card, .feature-card, .pricing-card, .testimonial-card');
+      var elements = document.querySelectorAll('.step-card, .feature-card, .pricing-card, .testimonial-card, .gallery-item');
       elements.forEach(function (el) {
         el.classList.add('visible');
       });
@@ -123,7 +123,7 @@
       }
     );
 
-    var cards = document.querySelectorAll('.step-card, .feature-card, .pricing-card, .testimonial-card');
+    var cards = document.querySelectorAll('.step-card, .feature-card, .pricing-card, .testimonial-card, .gallery-item');
     cards.forEach(function (card) {
       observer.observe(card);
     });
@@ -188,6 +188,59 @@
         }
       });
     }, { passive: true });
+  }
+
+  /* ================================================
+     GALLERY LIGHTBOX
+     ================================================ */
+  var lightboxOverlay = document.getElementById('lightbox-overlay');
+  var lightboxImage = document.getElementById('lightbox-image');
+  var lightboxCaption = document.getElementById('lightbox-caption');
+  var lightboxCloseBtn = document.getElementById('lightbox-close');
+
+  function openLightbox(imgSrc, imgAlt, caption) {
+    if (!lightboxOverlay || !lightboxImage) return;
+    lightboxImage.src = imgSrc;
+    lightboxImage.alt = imgAlt;
+    if (lightboxCaption) {
+      lightboxCaption.textContent = caption || '';
+    }
+    lightboxOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightboxOverlay) return;
+    lightboxOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Gallery item click to open lightbox
+  var galleryItems = document.querySelectorAll('.gallery-item');
+  galleryItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      var img = item.querySelector('img');
+      if (img) {
+        var caption = item.getAttribute('data-caption') || '';
+        openLightbox(img.src, img.alt, caption);
+      }
+    });
+  });
+
+  // Close lightbox
+  if (lightboxCloseBtn) {
+    lightboxCloseBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      closeLightbox();
+    });
+  }
+
+  if (lightboxOverlay) {
+    lightboxOverlay.addEventListener('click', function (e) {
+      if (e.target === lightboxOverlay) {
+        closeLightbox();
+      }
+    });
   }
 
   /* ================================================
@@ -256,10 +309,15 @@
     });
   }
 
-  // Close modal on Escape key
+  // Close modal/lightbox on Escape key
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
-      closeModal();
+    if (e.key === 'Escape') {
+      if (lightboxOverlay && lightboxOverlay.classList.contains('active')) {
+        closeLightbox();
+      }
+      if (modal && modal.classList.contains('active')) {
+        closeModal();
+      }
     }
   });
 
@@ -307,20 +365,42 @@
         return;
       }
 
-      // Simulate form submission (no real backend)
-      // TODO(security): In production, send form data to a server endpoint via HTTPS POST
+      // Collect form data for WhatsApp message
+      var nameVal = (document.getElementById('contact-name').value || '').trim();
+      var phoneVal = (document.getElementById('contact-phone').value || '').trim();
+      var emailVal = (document.getElementById('contact-email').value || '').trim();
+      var serviceSelect = document.getElementById('contact-service');
+      var serviceVal = serviceSelect ? serviceSelect.options[serviceSelect.selectedIndex].textContent : '';
+      var messageVal = (document.getElementById('contact-message').value || '').trim();
+
+      // Build the WhatsApp message
+      var whatsappMessage = '🏗️ *Nouvelle demande — GPS*\n\n'
+        + '👤 *Nom :* ' + nameVal + '\n'
+        + '📞 *Téléphone :* ' + phoneVal + '\n'
+        + '📧 *Email :* ' + emailVal + '\n'
+        + '🔧 *Service :* ' + serviceVal + '\n'
+        + '💬 *Message :*\n' + messageVal;
+
+      // WhatsApp number (Bénin)
+      var whatsappNumber = '2290161213051';
+      var whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(whatsappMessage);
+
+      // Show success state briefly, then redirect to WhatsApp
       var submitBtn = document.getElementById('form-submit');
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.textContent = 'Envoi en cours...';
+        submitBtn.textContent = 'Redirection vers WhatsApp...';
       }
 
+      // Show success message
+      contactForm.style.display = 'none';
+      if (formSuccess) {
+        formSuccess.hidden = false;
+      }
+
+      // Open WhatsApp after a short delay (lets user see success message)
       setTimeout(function () {
-        // Show success state
-        contactForm.style.display = 'none';
-        if (formSuccess) {
-          formSuccess.hidden = false;
-        }
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
         // Reset button
         if (submitBtn) {
@@ -334,14 +414,28 @@
           submitBtn.appendChild(arrow);
         }
 
-        // Auto close modal after 3s
+        // Close modal after redirect
         setTimeout(function () {
           closeModal();
-          // Reset after close animation
           setTimeout(resetForm, 400);
-        }, 3000);
-      }, 1200);
+        }, 2000);
+      }, 1000);
     });
+  }
+
+  /* ---- Parallax-like tilt on hero image (desktop only) ---- */
+  var heroImageWrapper = document.querySelector('.hero-image-wrapper');
+  if (heroImageWrapper && window.matchMedia('(min-width: 769px)').matches) {
+    document.addEventListener('mousemove', function (e) {
+      var rect = heroImageWrapper.getBoundingClientRect();
+      var centerX = rect.left + rect.width / 2;
+      var centerY = rect.top + rect.height / 2;
+      var deltaX = (e.clientX - centerX) / rect.width;
+      var deltaY = (e.clientY - centerY) / rect.height;
+      var rotateX = deltaY * -3;
+      var rotateY = deltaX * 3;
+      heroImageWrapper.style.transform = 'perspective(800px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
+    }, { passive: true });
   }
 
   /* ---- Init ---- */
