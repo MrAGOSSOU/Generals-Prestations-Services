@@ -88,7 +88,7 @@
   function createObserver() {
     if (!('IntersectionObserver' in window)) {
       // Fallback: show everything immediately
-      var elements = document.querySelectorAll('.step-card, .feature-card, .pricing-card, .testimonial-card, .gallery-item');
+      var elements = document.querySelectorAll('.step-card, .feature-card, .pricing-card, .testimonial-card, .catalog-item');
       elements.forEach(function (el) {
         el.classList.add('visible');
       });
@@ -123,7 +123,7 @@
       }
     );
 
-    var cards = document.querySelectorAll('.step-card, .feature-card, .pricing-card, .testimonial-card, .gallery-item');
+    var cards = document.querySelectorAll('.step-card, .feature-card, .pricing-card, .testimonial-card, .catalog-item');
     cards.forEach(function (card) {
       observer.observe(card);
     });
@@ -216,7 +216,7 @@
   }
 
   // Gallery item click to open lightbox
-  var galleryItems = document.querySelectorAll('.gallery-item');
+  var galleryItems = document.querySelectorAll('.gallery-item-trigger');
   galleryItems.forEach(function (item) {
     item.addEventListener('click', function () {
       var img = item.querySelector('img');
@@ -423,19 +423,15 @@
     });
   }
 
-  /* ---- Parallax-like tilt on hero image (desktop only) ---- */
-  var heroImageWrapper = document.querySelector('.hero-image-wrapper');
-  if (heroImageWrapper && window.matchMedia('(min-width: 769px)').matches) {
-    document.addEventListener('mousemove', function (e) {
-      var rect = heroImageWrapper.getBoundingClientRect();
-      var centerX = rect.left + rect.width / 2;
-      var centerY = rect.top + rect.height / 2;
-      var deltaX = (e.clientX - centerX) / rect.width;
-      var deltaY = (e.clientY - centerY) / rect.height;
-      var rotateX = deltaY * -3;
-      var rotateY = deltaX * 3;
-      heroImageWrapper.style.transform = 'perspective(800px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
-    }, { passive: true });
+  /* ---- Hero Slideshow ---- */
+  var heroSlides = document.querySelectorAll('.hero-slide');
+  if (heroSlides.length > 0) {
+    var currentSlide = 0;
+    setInterval(function () {
+      heroSlides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % heroSlides.length;
+      heroSlides[currentSlide].classList.add('active');
+    }, 4500);
   }
 
   /* ---- Init ---- */
