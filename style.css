@@ -521,11 +521,11 @@ a { text-decoration: none; color: inherit; }
 
 .modal-nav {
   position: absolute; top: 50%; transform: translateY(-50%);
-  background: rgba(255,255,255,0.1); border: none; color: white;
+  background: rgba(0,0,0,0.5); border: none; color: white;
   font-size: 2rem; padding: 10px 15px; cursor: pointer; z-index: 10;
   border-radius: 50%; transition: background 0.3s;
 }
-.modal-nav:hover { background: rgba(255,255,255,0.3); }
+.modal-nav:hover { background: rgba(0,0,0,0.8); }
 .modal-prev { left: 10px; }
 .modal-next { right: 10px; }
 
