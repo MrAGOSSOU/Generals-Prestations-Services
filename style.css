@@ -163,6 +163,19 @@ a { text-decoration: none; color: inherit; }
   position: relative;
   z-index: 2;
 }
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .hero-buttons .btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
 .hero-image-wrapper {
   position: relative;
   border-radius: var(--radius-lg);
