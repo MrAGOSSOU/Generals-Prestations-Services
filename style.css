@@ -273,8 +273,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ---- Testimonials (Avis Clients) Infinite Marquee ---- */
 .testimonials-marquee-container {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   white-space: nowrap;
   position: relative;
   width: 100vw;
@@ -282,8 +281,6 @@ a { text-decoration: none; color: inherit; }
   margin-top: 3rem;
   padding: 1rem 0;
   display: flex;
-  -webkit-overflow-scrolling: touch; /* For smooth mobile scrolling */
-  scrollbar-width: none; /* Firefox */
   cursor: grab;
 }
 .testimonials-marquee-container::-webkit-scrollbar {

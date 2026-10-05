@@ -239,9 +239,26 @@ document.addEventListener('DOMContentLoaded', function () {
       marqueeContainer.scrollLeft = scrollLeft - walk;
     });
 
-    // Touch events (mobile) to pause auto-scroll
-    marqueeContainer.addEventListener('touchstart', () => { isHovering = true; }, {passive: true});
-    marqueeContainer.addEventListener('touchend', () => { isHovering = false; });
+    // Touch events (mobile) for manual drag
+    marqueeContainer.addEventListener('touchstart', (e) => {
+      isDown = true;
+      startX = e.touches[0].pageX - marqueeContainer.offsetLeft;
+      scrollLeft = marqueeContainer.scrollLeft;
+      isHovering = true;
+    }, {passive: true});
+    
+    marqueeContainer.addEventListener('touchmove', (e) => {
+      if (!isDown) return;
+      const x = e.touches[0].pageX - marqueeContainer.offsetLeft;
+      const walk = (x - startX) * 2;
+      marqueeContainer.scrollLeft = scrollLeft - walk;
+    }, {passive: true});
+
+    marqueeContainer.addEventListener('touchend', () => {
+      isDown = false;
+      isHovering = false;
+    });
+
     marqueeContainer.addEventListener('mouseenter', () => { isHovering = true; });
 
     // Infinite Auto Scroll Logic
