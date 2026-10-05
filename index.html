@@ -2,494 +2,365 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Generals Prestations Services — Leader de la production et vente de clôtures préfabriquées 3D au Bénin. Qualité, durabilité et design moderne pour sécuriser votre propriété.">
-  <meta name="keywords" content="clôtures préfabriquées, clôtures 3D, Bénin, construction, sécurité, GPS, Generals Prestations Services">
-  <meta name="author" content="Generals Prestations Services">
-  <title>Generals Prestations Services | Clôtures Préfabriquées 3D au Bénin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Generals Prestations Services — Conception et réalisation de clôtures préfabriquées 3D en béton au Bénin.">
+  <title>Generals Prestations Services | BTP & Clôtures 3D</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- =============== NAVBAR =============== -->
-<!-- =============== NAVBAR =============== -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="nav-logo" id="nav-logo">
-        <img src="assets/logo-gps.png" alt="Logo Generals Prestations Services" class="nav-logo-img">
-      </a>
-      <ul class="nav-links" id="nav-links">
+      <a href="#" class="nav-logo"><img src="assets/logo-gps.png" alt="Logo Generals Prestations Services"></a>
+      
+      <ul class="nav-links">
         <li><a href="#accueil" class="nav-link">Accueil</a></li>
-        <li><a href="#modeles" class="nav-link">Modèles</a></li>
-        <li><a href="#comment-ca-marche" class="nav-link">Comment ça marche</a></li>
-
-        <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
-        <li><a href="#temoignages" class="nav-link">Témoignages</a></li>
-        <li><a href="#" class="nav-link nav-link--cta" data-open-modal="contact-modal">Nous Contacter</a></li>
+        <li><a href="#entreprise" class="nav-link">L'Entreprise</a></li>
+        <li><a href="#modeles" class="nav-link">Nos Modèles</a></li>
+        <li><a href="#galerie" class="nav-link">Galerie</a></li>
+        <li><a href="#" class="nav-link contact-trigger">Contact</a></li>
       </ul>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu de navigation">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
+      
+      <a href="#" class="btn btn-primary nav-cta contact-trigger">Demander un devis</a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
     </div>
   </nav>
 
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#accueil" class="mobile-nav-link">Accueil</a>
+    <a href="#entreprise" class="mobile-nav-link">L'Entreprise</a>
+    <a href="#modeles" class="mobile-nav-link">Nos Modèles</a>
+    <a href="#galerie" class="mobile-nav-link">Galerie</a>
+    <a href="#" class="mobile-nav-link contact-trigger">Contact</a>
+  </div>
+
   <!-- =============== HERO =============== -->
-  <section class="hero" id="accueil">
-    <div class="hero-slideshow" id="hero-slideshow">
-      <div class="hero-slide active" style="background-image: url('assets/hero-slides/media__1791064927196.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('assets/hero-slides/media__1791064927218.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('assets/hero-slides/media__1791064927245.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('assets/hero-slides/media__1791064927258.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('assets/hero-slides/media__1791064927261.jpg')"></div>
-    </div>
-    <div class="hero-bg-overlay"></div>
-    <div class="hero-particles" id="hero-particles"></div>
+  <section class="hero" id="accueil" style="background-image: url('Catalogue%202/image1.jpg'); background-size: cover; background-position: center;">
+    <!-- Overlay to ensure text readability -->
+    <div class="hero-overlay-solid"></div>
     <div class="container hero-container">
-      <div class="hero-content">
-        <span class="hero-badge">CLÔTURES PRÉFABRIQUÉES 3D • BÉNIN</span>
-        <h1 class="hero-title">
-          Votre propriété mérite mieux qu’une simple clôture.
-        </h1>
-        <p class="hero-subtitle">
-          Des clôtures décoratives 3D en béton conçues pour sécuriser, structurer et valoriser vos extérieurs.
-        </p>
-        <div class="hero-cta-group">
-          <a href="#" class="btn btn-primary" id="hero-cta-primary" data-open-modal="contact-modal">
-            OBTENIR MON DEVIS
-            <span class="btn-arrow">→</span>
-          </a>
-          <a href="#modeles" class="btn btn-secondary" id="hero-cta-secondary">
-            VOIR NOS MODÈLES
-          </a>
+      <div class="hero-content reveal">
+        <span class="section-tag">Generals Prestations Services</span>
+        <h1 class="title-xl" style="margin-bottom: 1.5rem;">Construisons votre<br>sécurité avec style.</h1>
+        <p class="text-lead" style="margin-bottom: 2.5rem; max-width: 500px;">Generals Prestations Services (GPS) est votre partenaire de confiance pour la réalisation de clôtures préfabriquées 3D en béton et vos travaux de génie civil.</p>
+        <div style="display: flex; gap: 1rem;">
+          <a href="#modeles" class="btn btn-primary">Voir les modèles</a>
+          <a href="#" class="btn btn-outline contact-trigger">Nous contacter</a>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <span class="hero-stat-number" data-target="500">0</span>
-            <span class="hero-stat-label">Projets réalisés</span>
-          </div>
-          <div class="hero-stat">
-            <span class="hero-stat-number" data-target="98">0</span>
-            <span class="hero-stat-label">% Satisfaction</span>
-          </div>
-          <div class="hero-stat">
-            <span class="hero-stat-number" data-target="10">0</span>
-            <span class="hero-stat-label">Ans d'expérience</span>
-          </div>
+      </div>
+      
+      <div class="hero-image-wrapper reveal delay-200">
+        <div class="hero-right-slideshow" id="hero-right-slider">
+          <img src="Catalogue%202/entete1.jpg" class="right-slide active" alt="Entête 1">
+          <img src="Catalogue%202/entete2.jpg%20.jpg" class="right-slide" alt="Entête 2">
+          <img src="Catalogue%202/entete3.jpg" class="right-slide" alt="Entête 3">
+          <img src="Catalogue%202/entete4.jpg" class="right-slide" alt="Entête 4">
+        </div>
+        
+        <div class="hero-floating-card">
+          <div style="font-size: 2rem; font-weight: 800;">+500</div>
+          <div style="font-size: 0.9rem; line-height: 1.2;">Projets<br>Réalisés</div>
         </div>
       </div>
     </div>
-    <div class="hero-scroll-indicator" id="hero-scroll-indicator">
-      <span class="scroll-text">Défiler</span>
-      <span class="scroll-arrow">↓</span>
+  </section>
+
+  <!-- =============== ABOUT =============== -->
+  <section class="section" id="entreprise">
+    <div class="container about-grid">
+      <div class="about-images reveal">
+        <img src="Catalogue%202/apropos1%20(1).jpg" alt="Chantier GPS" class="img-main" loading="lazy">
+        <img src="Catalogue%202/apropos2.jpg" alt="Détail clôture" class="img-offset" loading="lazy">
+      </div>
+      
+      <div class="about-text reveal delay-200">
+        <span class="section-tag">À propos</span>
+        <h2 class="title-lg" style="margin-bottom: 1.5rem;">Spécialistes de la préfabrication de clôtures décoratives.</h2>
+        <p class="text-body" style="margin-bottom: 2.5rem;">C'est notre cœur de métier : nous concevons, fabriquons et installons des clôtures préfabriquées 3D en béton. Nous maîtrisons toute la chaîne, de la conception architecturale à la pose finale sur votre terrain, pour transformer et sécuriser votre propriété.</p>
+          <a href="#" class="btn btn-outline contact-trigger">Découvrir nos services</a>
+      </div>
     </div>
   </section>
 
-  <!-- =============== NOS RÉALISATIONS / GALERIE =============== -->
-  <section class="section catalog-section" id="modeles">
+  <!-- =============== FEATURED MODELS =============== -->
+  <section class="section featured" id="modeles">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Notre Collection</span>
-        <h2 class="section-title">Modèles Architecturaux</h2>
-        <p class="section-subtitle">Découvrez notre gamme de clôtures décoratives 3D, conçues pour s'intégrer parfaitement à votre environnement.</p>
+      <div class="reveal" style="text-align: center;">
+        <span class="section-tag">Nos modèles</span>
+        <h2 class="title-lg">Modèles Architecturaux</h2>
       </div>
-      <div class="catalog-list">
-        <!-- Modèle 1 -->
-        <div class="catalog-item" id="gallery-1">
-          <div class="catalog-image gallery-item-trigger" data-caption="Modèle avec balustres — Clôture 3D">
-            <img src="assets/cloture-1.jpg" alt="Clôture préfabriquée modèle avec balustres" loading="lazy">
-          </div>
-          <div class="catalog-content">
-            <div class="catalog-label">Modèle Balustres</div>
-            <h3 class="catalog-title">L'Élégance Classique</h3>
-            <p class="catalog-desc">Un motif intégrant des balustres traditionnels pour une allure majestueuse et intemporelle.</p>
-            <a href="#" class="btn btn-outline" data-open-modal="contact-modal">Demander ce modèle</a>
+      
+      <div class="featured-grid">
+        <!-- Solid Blue Card -->
+        <div class="card card-blue reveal">
+          <h3 class="card-title">Besoin d'inspiration ?</h3>
+          <p>Découvrez notre gamme complète de motifs 3D exclusifs conçus pour s'adapter à l'architecture de votre bâtiment.</p>
+          <a href="#galerie" class="btn btn-white" style="align-self: flex-start; max-width: none; color: var(--c-primary); background: white;">Voir la galerie</a>
+        </div>
+        
+        <div class="card reveal delay-100">
+          <img src="Catalogue%202/a3ae2917ea18633ed5f9cbd4299bae73.jpg" class="card-img model-trigger" alt="Modèle Balustres" loading="lazy" style="cursor: pointer;">
+          <div class="card-content">
+            <h3 class="card-title">Modèle Balustres</h3>
+            <p class="text-body">Esthétique élégante et structurée.</p>
           </div>
         </div>
-        <!-- Modèle 2 -->
-        <div class="catalog-item" id="gallery-2">
-          <div class="catalog-image gallery-item-trigger" data-caption="Modèle Arc et Brique — Clôture 3D">
-            <img src="assets/cloture-2.jpg" alt="Clôture préfabriquée modèle arc et brique" loading="lazy">
-          </div>
-          <div class="catalog-content">
-            <div class="catalog-label">Modèle Arc & Brique</div>
-            <h3 class="catalog-title">Structure et Harmonie</h3>
-            <p class="catalog-desc">Une composition texturée évoquant la brique apparente sublimée par des arcs délicats.</p>
-            <a href="#" class="btn btn-outline" data-open-modal="contact-modal">Demander ce modèle</a>
+        
+        <div class="card reveal delay-200">
+          <img src="Catalogue%202/dc21aa13fc6b1ff0f33e8a939a3d5a94.jpg" class="card-img model-trigger" alt="Modèle Arc" loading="lazy" style="cursor: pointer;">
+          <div class="card-content">
+            <h3 class="card-title">Modèle Arc & Brique</h3>
+            <p class="text-body">Composition traditionnelle avec présence forte.</p>
           </div>
         </div>
-        <!-- Modèle 3 -->
-        <div class="catalog-item" id="gallery-3">
-          <div class="catalog-image gallery-item-trigger" data-caption="Modèle Mixte Brique et Pierre — Clôture 3D">
-            <img src="assets/cloture-3.jpg" alt="Clôture préfabriquée modèle mixte" loading="lazy">
-          </div>
-          <div class="catalog-content">
-            <div class="catalog-label">Modèle Mixte Pierre</div>
-            <h3 class="catalog-title">Le Caractère Brut</h3>
-            <p class="catalog-desc">L'association de la pierre et de la brique pour un rendu naturel et protecteur.</p>
-            <a href="#" class="btn btn-outline" data-open-modal="contact-modal">Demander ce modèle</a>
+
+        <div class="card reveal">
+          <img src="Catalogue%202/1c47a2d5dd9d1c1f57262ceb048e1598.jpg" class="card-img model-trigger" alt="Modèle Mixte" loading="lazy" style="cursor: pointer;">
+          <div class="card-content">
+            <h3 class="card-title">Modèle Mixte Pierre</h3>
+            <p class="text-body">Rendu contemporain combinant reliefs.</p>
           </div>
         </div>
-        <!-- Modèle 4 -->
-        <div class="catalog-item" id="gallery-4">
-          <div class="catalog-image gallery-item-trigger" data-caption="Modèle Tressé Blanc — Design moderne">
-            <img src="assets/cloture-4.jpg" alt="Clôture préfabriquée modèle tressé" loading="lazy">
-          </div>
-          <div class="catalog-content">
-            <div class="catalog-label">Modèle Tressé</div>
-            <h3 class="catalog-title">L'Esthétique Contemporaine</h3>
-            <p class="catalog-desc">Un motif tressé moderne apportant dynamisme et légèreté visuelle à votre propriété.</p>
-            <a href="#" class="btn btn-outline" data-open-modal="contact-modal">Demander ce modèle</a>
+
+        <div class="card reveal delay-100">
+          <img src="Catalogue%201/7d865f6038ffd629a439b2d85060d0ba.jpg" class="card-img model-trigger" alt="Modèle Tressé" loading="lazy" style="cursor: pointer;">
+          <div class="card-content">
+            <h3 class="card-title">Modèle Tressé</h3>
+            <p class="text-body">Motif décoratif original et distinctif.</p>
           </div>
         </div>
-        <!-- Modèle 5 -->
-        <div class="catalog-item" id="gallery-5">
-          <div class="catalog-image gallery-item-trigger" data-caption="Modèle avec frise décorative — Clôture 3D">
-            <img src="assets/cloture-5.jpg" alt="Clôture préfabriquée modèle frise" loading="lazy">
-          </div>
-          <div class="catalog-content">
-            <div class="catalog-label">Modèle Frise Royale</div>
-            <h3 class="catalog-title">Le Raffinement Ultime</h3>
-            <p class="catalog-desc">Une finition supérieure couronnée d'une frise décorative pour les résidences de prestige.</p>
-            <a href="#" class="btn btn-outline" data-open-modal="contact-modal">Demander ce modèle</a>
+
+        <div class="card reveal delay-200">
+          <img src="Catalogue%201/405d8053b51b3b51fa4766822c4c070f.jpg" class="card-img model-trigger" alt="Frise" loading="lazy" style="cursor: pointer;">
+          <div class="card-content">
+            <h3 class="card-title">Frise Royale</h3>
+            <p class="text-body">Finition haut de gamme très expressive.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- =============== POURQUOI NOUS CHOISIR =============== -->
-  <section class="section features-section" id="avantages">
+  <!-- =============== GALLERY (Horizontal Slider) =============== -->
+  <section class="section gallery-section" id="galerie">
+    <div class="container reveal">
+      <span class="section-tag">Nos Réalisations</span>
+      <h2 class="title-lg" style="margin-bottom: 2rem;">Quelques unes de nos réalisations</h2>
+    </div>
+    
+    <div class="gallery-slider reveal delay-100">
+      <div class="gallery-slide" style="margin-left: max(1.5rem, calc((100vw - 1280px) / 2));"><img src="Catalogue%201/cloture-1.jpg" alt="Installation 1" loading="lazy" class="gallery-trigger" style="cursor: pointer;"></div>
+      <div class="gallery-slide"><img src="Catalogue%202/585162d1ed43480965e025c587f18c16.jpg" alt="Installation 2" loading="lazy" class="gallery-trigger" style="cursor: pointer;"></div>
+      <div class="gallery-slide"><img src="Catalogue%201/cloture-2.jpg" alt="Installation 3" loading="lazy" class="gallery-trigger" style="cursor: pointer;"></div>
+      <div class="gallery-slide"><img src="Catalogue%201/cloture-3.jpg" alt="Installation 4" loading="lazy" class="gallery-trigger" style="cursor: pointer;"></div>
+      <div class="gallery-slide"><img src="Catalogue%201/cloture-4.jpg" alt="Installation 5" loading="lazy" class="gallery-trigger" style="cursor: pointer;"></div>
+      <div class="gallery-slide"><img src="Catalogue%201/photo4.jpg" alt="Installation 6" loading="lazy" class="gallery-trigger" style="cursor: pointer;"></div>
+      <div class="gallery-slide"><img src="Catalogue%201/photo5.jpg" alt="Installation 7" loading="lazy" class="gallery-trigger" style="cursor: pointer;"></div>
+      <div class="gallery-slide" style="margin-right: max(1.5rem, calc((100vw - 1280px) / 2));"><img src="Catalogue%201/photo6.jpg" alt="Installation 8" loading="lazy" class="gallery-trigger" style="cursor: pointer;"></div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="https://www.tiktok.com/@generals.prestati5?_r=1&_t=ZS-9AIy2JhXT7d" target="_blank" rel="noopener noreferrer" class="btn btn-outline">En voir plus</a>
+    </div>
+  </section>
+
+  <!-- =============== TESTIMONIALS (Avis Clients Ultra Premium) =============== -->
+  <section class="section" id="avis-clients" style="background-color: var(--c-gray-100); overflow: hidden;">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Nos avantages</span>
-        <h2 class="section-title">Pourquoi choisir Generals Prestations Services ?</h2>
-        <p class="section-subtitle">Qualité · Fiabilité · Service Professionnel au Bénin</p>
+      <div class="reveal" style="text-align: center;">
+        <span class="section-tag">Avis Clients</span>
+        <h2 class="title-lg">Ils nous font confiance</h2>
       </div>
-      <div class="features-grid">
-        <!-- Feature 1 -->
-        <div class="feature-card" id="feature-1">
-          <div class="feature-icon-wrapper">
-            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M24 4L4 14v20l20 10 20-10V14L24 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M4 14l20 10 20-10M24 44V24" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Design Moderne &amp; Élégant</h3>
-          <p class="feature-desc">Motifs 3D exclusifs : Modèle Pierre, Modèle Diamant et bien d'autres designs contemporains pour sublimer votre propriété.</p>
-        </div>
-        <!-- Feature 2 -->
-        <div class="feature-card" id="feature-2">
-          <div class="feature-icon-wrapper">
-            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="8" y="18" width="32" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
-              <path d="M16 18V12a8 8 0 1116 0v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="24" cy="32" r="4" stroke="currentColor" stroke-width="2"/>
-              <path d="M24 36v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Anti-Intrusion &amp; Durable</h3>
-          <p class="feature-desc">Sécurité maximale grâce à des panneaux en béton armé ultra résistant. Une barrière infranchissable qui dure des décennies.</p>
-        </div>
-        <!-- Feature 3 -->
-        <div class="feature-card" id="feature-3">
-          <div class="feature-icon-wrapper">
-            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
-              <path d="M24 12v12l8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Installation Rapide en 48H</h3>
-          <p class="feature-desc">Notre équipe professionnelle installe votre clôture en un temps record. Pas de longs travaux de maçonnerie, résultat immédiat.</p>
-        </div>
-        <!-- Feature 4 -->
-        <div class="feature-card" id="feature-4">
-          <div class="feature-icon-wrapper">
-            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14L4 16h14l6-12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Béton Armé Ultra Résistant</h3>
-          <p class="feature-desc">Matériaux de première qualité, produits dans nos ateliers au Bénin. Résistance aux intempéries et au temps garantie.</p>
-        </div>
-        <!-- Feature 5 -->
-        <div class="feature-card" id="feature-5">
-          <div class="feature-icon-wrapper">
-            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="24" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
-              <path d="M24 28v4M18 36h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M12 42c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M20 18l3 3 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Meilleur Prix du Marché</h3>
-          <p class="feature-desc">Un rapport qualité-prix imbattable. Production locale, pas d'intermédiaire. Livraison et installation partout au Bénin.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============== COMMENT CA MARCHE =============== -->
-  <section class="section steps-section" id="comment-ca-marche">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Processus simple</span>
-        <h2 class="section-title">Comment ça marche ?</h2>
-        <p class="section-subtitle">Obtenez votre clôture en seulement 3 étapes simples</p>
-      </div>
-      <div class="steps-grid">
-        <!-- Step 1 -->
-        <div class="step-card" id="step-1">
-          <div class="step-number">01</div>
-          <div class="step-icon-wrapper">
-            <svg class="step-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="8" y="12" width="48" height="40" rx="4" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M20 28h24M20 36h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="32" cy="8" r="4" stroke="currentColor" stroke-width="2.5"/>
-            </svg>
-          </div>
-          <h3 class="step-title">Demandez un devis</h3>
-          <p class="step-description">
-            Contactez-nous avec les dimensions et le style souhaités. Nous vous proposons un devis personnalisé sous 24h.
-          </p>
-        </div>
-        <!-- Step 2 -->
-        <div class="step-card" id="step-2">
-          <div class="step-number">02</div>
-          <div class="step-icon-wrapper">
-            <svg class="step-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="4" y="20" width="56" height="32" rx="2" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M4 20L32 4l28 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="16" y="32" width="12" height="20" rx="1" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="36" y="28" width="16" height="12" rx="1" stroke="currentColor" stroke-width="2.5"/>
-            </svg>
-          </div>
-          <h3 class="step-title">Fabrication sur mesure</h3>
-          <p class="step-description">
-            Nos artisans produisent vos panneaux 3D avec des matériaux de première qualité, dans nos ateliers au Bénin.
-          </p>
-        </div>
-        <!-- Step 3 -->
-        <div class="step-card" id="step-3">
-          <div class="step-number">03</div>
-          <div class="step-icon-wrapper">
-            <svg class="step-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M8 52h48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <rect x="12" y="20" width="8" height="32" rx="1" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="28" y="20" width="8" height="32" rx="1" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="44" y="20" width="8" height="32" rx="1" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M20 32h8M36 32h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="32" cy="12" r="6" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M29 12l2 2 4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="step-title">Livraison & Installation</h3>
-          <p class="step-description">
-            Nous livrons et installons votre clôture en 48H. Profitez d'une finition parfaite, garantie 5 ans.
-          </p>
-        </div>
-      </div>
-      <!-- Connector line (desktop only) -->
-      <div class="steps-connector" aria-hidden="true">
-        <div class="connector-line"></div>
-      </div>
-    </div>
-  </section>
-
-
-<!-- =============== TARIFS =============== -->
-  <section class="section pricing-section" id="tarifs">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Nos offres</span>
-        <h2 class="section-title">Tarifs transparents</h2>
-        <p class="section-subtitle">Des formules adaptées à chaque besoin et chaque budget</p>
-      </div>
-      <div class="pricing-grid">
-        <!-- Panneau -->
-        <div class="pricing-card" id="plan-panneau">
-          <div class="pricing-card-header">
-            <span class="pricing-label">Panneau</span>
-            <div class="pricing-price">
-              <span class="pricing-currency">FCFA</span>
-              <span class="pricing-amount">15 000</span>
-              <span class="pricing-unit">/ unité</span>
-            </div>
-            <p class="pricing-desc">Panneau préfabriqué 3D avec montage inclus</p>
-          </div>
-          <ul class="pricing-features">
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Panneau préfabriqué 3D
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Montage inclus dans le prix
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Motifs décoratifs variés
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Haute résistance aux intempéries
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Finition soignée
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Garantie qualité
-            </li>
-          </ul>
-          <a href="#" class="btn btn-outline" id="cta-panneau" data-open-modal="contact-modal">Demander un devis</a>
-        </div>
-
-        <!-- Poteau -->
-        <div class="pricing-card pricing-card--featured" id="plan-poteau">
-          <div class="pricing-badge">Indispensable</div>
-          <div class="pricing-card-header">
-            <span class="pricing-label">Poteau</span>
-            <div class="pricing-price">
-              <span class="pricing-currency">FCFA</span>
-              <span class="pricing-amount">20 000</span>
-              <span class="pricing-unit">/ unité</span>
-            </div>
-            <p class="pricing-desc">Poteau de soutien robuste pour vos clôtures</p>
-          </div>
-          <ul class="pricing-features">
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Poteau en béton armé
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Haute résistance structurelle
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Compatible tous panneaux
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Dimensions adaptées
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Finition professionnelle
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Durabilité longue durée
-            </li>
-          </ul>
-          <a href="#" class="btn btn-primary" id="cta-poteau" data-open-modal="contact-modal">Commander</a>
-        </div>
-
-        <!-- Sur Mesure -->
-        <div class="pricing-card" id="plan-sur-mesure">
-          <div class="pricing-card-header">
-            <span class="pricing-label">Sur Mesure</span>
-            <div class="pricing-price">
-              <span class="pricing-currency">FCFA</span>
-              <span class="pricing-amount">Sur devis</span>
-              <span class="pricing-unit"></span>
-            </div>
-            <p class="pricing-desc">Pour les projets d'envergure et professionnels</p>
-          </div>
-          <ul class="pricing-features">
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Design personnalisé exclusif
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Hauteur &amp; dimensions libres
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Peinture &amp; finition au choix
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Livraison &amp; installation
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Chef de projet dédié
-            </li>
-            <li class="pricing-feature">
-              <span class="feature-check">✓</span>
-              Garantie 10 ans
-            </li>
-          </ul>
-          <a href="#" class="btn btn-outline" id="cta-sur-mesure" data-open-modal="contact-modal">Nous contacter</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============== TEMOIGNAGES =============== -->
-  <section class="section testimonials-section" id="temoignages">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Ils nous font confiance</span>
-        <h2 class="section-title">Témoignages clients</h2>
-        <p class="section-subtitle">Découvrez les retours de nos clients satisfaits</p>
-      </div>
-      <div class="testimonials-grid">
-        <!-- Témoignage 1 -->
-        <div class="testimonial-card" id="testimonial-1">
-          <div class="testimonial-stars" aria-label="5 étoiles sur 5">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-          </div>
-          <blockquote class="testimonial-text">
-            "J'ai fait clôturer ma parcelle à Calavi avec Generals Prestations Services. Le résultat est magnifique ! Les motifs 3D donnent un look très moderne à ma maison. Merci à toute l'équipe !"
-          </blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" aria-hidden="true">AK</div>
-            <div class="testimonial-info">
-              <span class="testimonial-name">Aristide Kpossou</span>
-              <span class="testimonial-role">Propriétaire à Calavi</span>
+      
+      <div class="testimonials-marquee-container reveal delay-100" id="testimonials-container">
+        <div class="testimonials-marquee-track" id="testimonials-track">
+          <!-- ORIGINAL SET OF 6 -->
+          <div class="testimonial-card">
+            <img src="avis%20clients/45e2a11aec1482d05935fef3e4b47025.jpg" alt="Projet Clôture Cotonou" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"J'ai commandé des clôtures 3D pour ma nouvelle villa. L'équipe a été très professionnelle et le rendu final est magnifique. Ma maison est sécurisée avec une touche de luxe très appréciable."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/789e3c79419d714d1623d04c05213a05.jpg" alt="Avis client Kossi" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Kossi T.</div>
+                  <div class="testimonial-city">Cotonou</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Témoignage 2 -->
-        <div class="testimonial-card" id="testimonial-2">
-          <div class="testimonial-stars" aria-label="5 étoiles sur 5">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-          </div>
-          <blockquote class="testimonial-text">
-            "Nous avons choisi Generals Prestations Services pour notre entreprise à Cotonou. Rapport qualité-prix imbattable. L'installation a été rapide et le rendu est vraiment professionnel."
-          </blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" aria-hidden="true">FD</div>
-            <div class="testimonial-info">
-              <span class="testimonial-name">Florence Dossou</span>
-              <span class="testimonial-role">Directrice — Dossou & Fils SARL</span>
+          
+          <div class="testimonial-card">
+            <img src="avis%20clients/8945dc18b3a597184b7ee991b565fc72.jpg" alt="Projet Clôture Porto-Novo" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"La qualité du béton est exceptionnelle. Les clôtures décoratives GPS ont complètement transformé l'apparence de notre propriété. Rapport qualité-prix imbattable au Bénin."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/88bb53f26dbdc8136f9384cc450128a3.jpg" alt="Avis client Aïcha" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Aïcha M.</div>
+                  <div class="testimonial-city">Porto-Novo</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Témoignage 3 -->
-        <div class="testimonial-card" id="testimonial-3">
-          <div class="testimonial-stars" aria-label="5 étoiles sur 5">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <div class="testimonial-card">
+            <img src="avis%20clients/a39466add378f6068ba4bd8b3d1769b4.jpg" alt="Projet Clôture Abomey-Calavi" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Service impeccable, de la commande à la pose ! J'avais peur des délais, mais ils ont livré et installé la clôture dans les temps. Je recommande fortement leurs motifs architecturaux."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/a1204e0170e61fdf2a5af9b35c700935.jpg" alt="Avis client Sèna" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Sèna D.</div>
+                  <div class="testimonial-city">Abomey-Calavi</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <blockquote class="testimonial-text">
-            "Generals Prestations Services est le meilleur choix que j'ai fait pour mon lotissement. 200 mètres linéaires installés en 3 jours ! Service sérieux et professionnalisme remarquable."
-          </blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" aria-hidden="true">PA</div>
-            <div class="testimonial-info">
-              <span class="testimonial-name">Patrick Adjovi</span>
-              <span class="testimonial-role">Promoteur Immobilier à Parakou</span>
+
+          <div class="testimonial-card">
+            <img src="avis%20clients/b419dc879b2caaaa558a649657293b4c.jpg" alt="Projet Clôture Ouidah" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Un travail d'orfèvre. Les finitions sont parfaites, on sent vraiment l'expertise. La clôture préfabriquée donne un cachet incroyable et sécurisant à notre résidence familiale."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/cfd35b79d09bea93a72ece0df8f7f89c.jpg" alt="Avis client Félicien" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Félicien A.</div>
+                  <div class="testimonial-city">Ouidah</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="avis%20clients/e0ec92a0f2700917f58881c7819751ac.jpg" alt="Projet Clôture Bohicon" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Très satisfait de ma clôture. Résistance et esthétique sont au rendez-vous. C'est l'entreprise qu'il faut pour vos travaux d'embellissement extérieur au Bénin."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/f5b48dd7919a121eea5dba25faf7dd47.jpg" alt="Avis client Mahougnon" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Mahougnon K.</div>
+                  <div class="testimonial-city">Bohicon</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="avis%20clients/e98e458f5d383aad2c471319ea375db4.jpg" alt="Projet Clôture Parakou" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Des professionnels à l'écoute de nos besoins. Ils ont su me conseiller le meilleur modèle pour mon terrain. L'installation a été rapide, propre et le résultat est sans appel."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/f90e1ac9e5f0ba68f8f800de051eec57.jpg" alt="Avis client Gbêtondji" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Gbêtondji H.</div>
+                  <div class="testimonial-city">Parakou</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DUPLICATED SET OF 6 (For seamless infinite marquee) -->
+          <div class="testimonial-card">
+            <img src="avis%20clients/45e2a11aec1482d05935fef3e4b47025.jpg" alt="Projet Clôture Cotonou" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"J'ai commandé des clôtures 3D pour ma nouvelle villa. L'équipe a été très professionnelle et le rendu final est magnifique. Ma maison est sécurisée avec une touche de luxe très appréciable."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/789e3c79419d714d1623d04c05213a05.jpg" alt="Avis client Kossi" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Kossi T.</div>
+                  <div class="testimonial-city">Cotonou</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <img src="avis%20clients/8945dc18b3a597184b7ee991b565fc72.jpg" alt="Projet Clôture Porto-Novo" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"La qualité du béton est exceptionnelle. Les clôtures décoratives GPS ont complètement transformé l'apparence de notre propriété. Rapport qualité-prix imbattable au Bénin."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/88bb53f26dbdc8136f9384cc450128a3.jpg" alt="Avis client Aïcha" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Aïcha M.</div>
+                  <div class="testimonial-city">Porto-Novo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="avis%20clients/a39466add378f6068ba4bd8b3d1769b4.jpg" alt="Projet Clôture Abomey-Calavi" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Service impeccable, de la commande à la pose ! J'avais peur des délais, mais ils ont livré et installé la clôture dans les temps. Je recommande fortement leurs motifs architecturaux."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/a1204e0170e61fdf2a5af9b35c700935.jpg" alt="Avis client Sèna" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Sèna D.</div>
+                  <div class="testimonial-city">Abomey-Calavi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="avis%20clients/b419dc879b2caaaa558a649657293b4c.jpg" alt="Projet Clôture Ouidah" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Un travail d'orfèvre. Les finitions sont parfaites, on sent vraiment l'expertise. La clôture préfabriquée donne un cachet incroyable et sécurisant à notre résidence familiale."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/cfd35b79d09bea93a72ece0df8f7f89c.jpg" alt="Avis client Félicien" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Félicien A.</div>
+                  <div class="testimonial-city">Ouidah</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="avis%20clients/e0ec92a0f2700917f58881c7819751ac.jpg" alt="Projet Clôture Bohicon" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Très satisfait de ma clôture. Résistance et esthétique sont au rendez-vous. C'est l'entreprise qu'il faut pour vos travaux d'embellissement extérieur au Bénin."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/f5b48dd7919a121eea5dba25faf7dd47.jpg" alt="Avis client Mahougnon" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Mahougnon K.</div>
+                  <div class="testimonial-city">Bohicon</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="avis%20clients/e98e458f5d383aad2c471319ea375db4.jpg" alt="Projet Clôture Parakou" class="testimonial-project-img" loading="lazy">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Des professionnels à l'écoute de nos besoins. Ils ont su me conseiller le meilleur modèle pour mon terrain. L'installation a été rapide, propre et le résultat est sans appel."</p>
+              <div class="testimonial-footer">
+                <img src="avis%20clients/avatar/f90e1ac9e5f0ba68f8f800de051eec57.jpg" alt="Avis client Gbêtondji" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Gbêtondji H.</div>
+                  <div class="testimonial-city">Parakou</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -497,171 +368,123 @@
     </div>
   </section>
 
-  <!-- =============== CONTACT / FOOTER =============== -->
-
-  <footer class="footer" id="contact">
-    <div class="footer-wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="currentColor"/>
-      </svg>
+  <!-- =============== FOOTER =============== -->
+  <footer class="footer">
+    <div class="footer-bg-slideshow" id="footer-bg-slider">
+      <img src="Catalogue%202/pieds%20de%20page%201.jpg" class="footer-slide active" alt="Footer bg">
+      <img src="Catalogue%202/pieds%20de%20page2.jpg" class="footer-slide" alt="Footer bg">
     </div>
-    <div class="container footer-container">
+    <div class="footer-overlay"></div>
+    <div class="container footer-content-wrapper">
       <div class="footer-grid">
-        <!-- Brand -->
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="assets/logo-gps.png" alt="Logo Generals Prestations Services" class="footer-logo-img">
-          </div>
-          <p class="footer-tagline">
-            Production et vente de clôtures préfabriquées 3D, travaux de Génie Civil, BTP et préfabrication de matériaux de construction.
-          </p>
-          <p class="footer-slogan">Votre partenaire BTP de confiance</p>
-          <div class="footer-social">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-facebook" aria-label="Visitez notre page Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="https://wa.me/2290161213051?text=Bonjour%20Generals%20Prestations%20Services.%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20cl%C3%B4tures%20pr%C3%A9fabriqu%C3%A9es%203D.%20Pouvons-nous%20%C3%A9changer%20%C3%A0%20ce%20sujet%20%3F" target="_blank" rel="noopener noreferrer" class="social-link" id="social-whatsapp" aria-label="Contactez-nous sur WhatsApp">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-instagram" aria-label="Suivez-nous sur Instagram">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.882 0 1.441 1.441 0 012.882 0z"/></svg>
-            </a>
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-tiktok" aria-label="Suivez-nous sur TikTok">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-            </a>
+        <div>
+          <a href="#" class="footer-logo" style="display:inline-block;"><img src="assets/logo-gps.png" alt="Logo Generals Prestations Services"></a>
+          <p class="text-body" style="max-width: 300px; color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Generals Prestations Services.<br>Spécialiste de la clôture préfabriquée 3D et des travaux de génie civil au Bénin.</p>
+          <div style="margin-top: 1rem;">
+            <a href="https://www.tiktok.com/@generals.prestati5?_r=1&_t=ZS-9AIy2JhXT7d" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: rgba(255,255,255,0.6); color: white;">Nos réseaux</a>
           </div>
         </div>
-
-        <!-- Liens rapides -->
-        <div class="footer-links-group">
-          <h3 class="footer-heading">Liens rapides</h3>
-          <ul class="footer-links-list">
-            <li><a href="#accueil" class="footer-link">Accueil</a></li>
-            <li><a href="#comment-ca-marche" class="footer-link">Comment ça marche</a></li>
-
-            <li><a href="#tarifs" class="footer-link">Nos tarifs</a></li>
-            <li><a href="#temoignages" class="footer-link">Témoignages</a></li>
+        <div>
+          <h4 class="title-md" style="font-size: 1.1rem; margin-bottom: 1rem; color: #fff;">Liens utiles</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; color: rgba(255,255,255,0.8);">
+            <li><a href="#entreprise">À propos</a></li>
+            <li><a href="#modeles">Modèles</a></li>
+            <li><a href="#galerie">Galerie</a></li>
           </ul>
         </div>
-
-        <!-- Nos services -->
-        <div class="footer-links-group">
-          <h3 class="footer-heading">Nos réalisations &amp; services</h3>
-          <ul class="footer-links-list">
-            <li><a href="#tarifs" class="footer-link">Clôtures préfabriquées 3D</a></li>
-            <li><a href="#avantages" class="footer-link">Travaux de Génie Civil</a></li>
-            <li><a href="#avantages" class="footer-link">BTP &amp; Divers</a></li>
-            <li><a href="#avantages" class="footer-link">Études, suivi &amp; contrôle de chantier</a></li>
-            <li><a href="#avantages" class="footer-link">Préfabrication de matériaux</a></li>
+        <div>
+          <h4 class="title-md" style="font-size: 1.1rem; margin-bottom: 1rem; color: #fff;">Contact</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; color: rgba(255,255,255,0.8);">
+            <li>Cotonou, Bénin</li>
+            <li><a href="tel:+22961213051">+229 61 21 30 51</a></li>
+            <li><a href="mailto:generalsprestationsservices@gmail.com">generalsprestationsservices@gmail.com</a></li>
           </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="footer-contact">
-          <h3 class="footer-heading">Nous contacter</h3>
-          <div class="contact-items">
-            <div class="contact-item">
-              <span class="contact-icon" aria-hidden="true">📍</span>
-              <span>Cotonou, Bénin</span>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon" aria-hidden="true">📞</span>
-              <a href="tel:+2290161213051" class="footer-link">01 61 21 30 51</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon" aria-hidden="true">📞</span>
-              <a href="tel:+2290140516953" class="footer-link">01 40 51 69 53</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon" aria-hidden="true">📢</span>
-              <a href="https://wa.me/2290161213051?text=Bonjour%20Generals%20Prestations%20Services.%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20cl%C3%B4tures%20pr%C3%A9fabriqu%C3%A9es%203D.%20Pouvons-nous%20%C3%A9changer%20%C3%A0%20ce%20sujet%20%3F" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp : 01 61 21 30 51</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon" aria-hidden="true">🕐</span>
-              <span>Lun – Sam : 8h – 18h</span>
-            </div>
-          </div>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <div class="footer-legal">
-          <p class="footer-legal-item">RCCM : RCN° BR COT2022 A 641561</p>
-          <span class="footer-legal-sep" aria-hidden="true">·</span>
-          <p class="footer-legal-item">IFU : 0202213962185</p>
-        </div>
-        <p class="footer-copyright">
-          &copy; 2026 Generals Prestations Services. Tous droits réservés.
-        </p>
+      
+      <div class="footer-bottom" style="border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.6);">
+        <p>&copy; 2026 Generals Prestations Services. Tous droits réservés.</p>
       </div>
     </div>
   </footer>
 
-  <!-- =============== WHATSAPP FLOATING BUTTON =============== -->
-  <div class="whatsapp-float" id="whatsapp-float">
-    <span class="whatsapp-float-tooltip">Écrivez-nous sur WhatsApp</span>
-    <a href="https://wa.me/2290161213051?text=Bonjour%20Generals%20Prestations%20Services.%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20cl%C3%B4tures%20pr%C3%A9fabriqu%C3%A9es%203D.%20Pouvons-nous%20%C3%A9changer%20%C3%A0%20ce%20sujet%20%3F" target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Contactez-nous sur WhatsApp" id="whatsapp-float-btn">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-  </div>
-
-  <!-- =============== LIGHTBOX =============== -->
-  <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Voir l'image en grand">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">&times;</button>
-    <img src="" alt="" id="lightbox-image">
-    <div class="lightbox-caption" id="lightbox-caption"></div>
-  </div>
-
-  <!-- =============== CONTACT MODAL =============== -->
-  <div class="modal-overlay" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-container">
-      <button class="modal-close" id="modal-close" aria-label="Fermer le formulaire de contact">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
-      </button>
-      <div class="modal-header">
-        <span class="section-tag">Contactez-nous</span>
-        <h2 class="modal-title" id="modal-title">Demandez votre devis gratuit</h2>
-        <p class="modal-subtitle">Remplissez le formulaire ci-dessous et nous vous répondrons sous 24h.</p>
+  <!-- Modal Models -->
+  <div class="modal-gallery" id="modal-models">
+    <button class="modal-close" id="modal-models-close">&times;</button>
+    <div class="modal-slider-container">
+      <button class="modal-nav modal-prev" id="modal-models-prev">&#10094;</button>
+      <div class="modal-slider" id="modal-models-slider">
+        <div class="modal-slide"><img src="Catalogue%202/a3ae2917ea18633ed5f9cbd4299bae73.jpg" alt="Modèle"></div>
+        <div class="modal-slide"><img src="Catalogue%202/dc21aa13fc6b1ff0f33e8a939a3d5a94.jpg" alt="Modèle"></div>
+        <div class="modal-slide"><img src="Catalogue%202/1c47a2d5dd9d1c1f57262ceb048e1598.jpg" alt="Modèle"></div>
+        <div class="modal-slide"><img src="Catalogue%201/7d865f6038ffd629a439b2d85060d0ba.jpg" alt="Modèle"></div>
+        <div class="modal-slide"><img src="Catalogue%201/405d8053b51b3b51fa4766822c4c070f.jpg" alt="Modèle"></div>
       </div>
-      <form class="contact-form" id="contact-form" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="contact-name" class="form-label">Nom complet</label>
-            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Votre nom" required autocomplete="name">
-          </div>
-          <div class="form-group">
-            <label for="contact-phone" class="form-label">Téléphone</label>
-            <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+229 XX XX XX XX" required autocomplete="tel">
-          </div>
+      <button class="modal-nav modal-next" id="modal-models-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="contact-modal-overlay" id="contact-modal">
+    <div class="contact-modal-content">
+      <button class="contact-modal-close" id="contact-modal-close">&times;</button>
+      <h2>Demander un Devis</h2>
+      <form id="premium-contact-form">
+        <div class="form-group">
+          <input type="text" id="contact-name" class="form-control" placeholder="Votre nom" required>
         </div>
         <div class="form-group">
-          <label for="contact-email" class="form-label">Email</label>
-          <input type="email" id="contact-email" name="email" class="form-input" placeholder="votre@email.com" required autocomplete="email">
+          <input type="tel" id="contact-phone" class="form-control" placeholder="Numéro de téléphone" required>
         </div>
         <div class="form-group">
-          <label for="contact-service" class="form-label">Service souhaité</label>
-          <select id="contact-service" name="service" class="form-input form-select" required>
-            <option value="" disabled selected>Choisissez un service</option>
-            <option value="panneau">Panneau préfabriqué 3D — 15 000 FCFA/unité</option>
-            <option value="poteau">Poteau de soutien — 20 000 FCFA/unité</option>
-            <option value="sur-mesure">Projet sur mesure (devis personnalisé)</option>
-            <option value="autre">Autre demande</option>
+          <select id="contact-service" class="form-control" required>
+            <option value="Clôture 3D Décorative">Clôture 3D Décorative</option>
+            <option value="Travaux BTP">Travaux BTP / Génie civil</option>
+            <option value="Autre">Autre</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="contact-message" class="form-label">Message</label>
-          <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Décrivez votre projet : dimensions, nombre de panneaux, localisation…" rows="4" required></textarea>
+          <textarea id="contact-message" class="form-control" rows="4" placeholder="Détails de votre projet..."></textarea>
         </div>
-        <button type="submit" class="btn btn-primary form-submit" id="form-submit">
-          Envoyer ma demande
-          <span class="btn-arrow">→</span>
-        </button>
+        <button type="submit" class="btn btn-primary" style="width: 100%;" id="form-submit">Envoyer via WhatsApp</button>
       </form>
-      <div class="form-success" id="form-success" hidden>
-        <div class="success-icon">✓</div>
-        <h3 class="success-title">Message envoyé !</h3>
-        <p class="success-text">Merci pour votre intérêt. Notre équipe vous contactera dans les plus brefs délais.</p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/22961213051" target="_blank" rel="noopener noreferrer" class="floating-whatsapp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+  <div class="modal-gallery" id="modal-gallery">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <div class="modal-slider-container">
+      <button class="modal-nav modal-prev" id="modal-prev">&#10094;</button>
+      <div class="modal-slider" id="modal-slider">
+        <!-- These slides will be populated by Catalogue 1 images -->
+        <div class="modal-slide"><img src="Catalogue%201/cloture-1.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/cloture-2.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/cloture-3.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/cloture-4.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/cloture-5.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/photo4.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/photo5.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/photo6.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.11.23.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.11.53.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.12.04.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.12.10.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.12.15.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.12.32.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.12.37.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.12.42.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.12.48.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/2026-10-05%2013.12.56.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/405d8053b51b3b51fa4766822c4c070f.jpg" alt="Realisation"></div>
+        <div class="modal-slide"><img src="Catalogue%201/7d865f6038ffd629a439b2d85060d0ba.jpg" alt="Realisation"></div>
       </div>
+      <button class="modal-nav modal-next" id="modal-next">&#10095;</button>
     </div>
   </div>
 
